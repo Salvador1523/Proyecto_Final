@@ -1,0 +1,29 @@
+#Proyecto_Final
+#Jesús Salvador Angulo Flores.
+
+#Creacion de los Usuarios y Contraseñas.
+Usuarios = ['Jose', 'Carlos', 'Angel', 'Luis']
+Contraseñas = ['J012', 'CR420', 'AJ289', 'L987']
+access = False
+
+#Evaluacion de la condicion.
+while True:
+ Usuario = input('Asigna un Usuario: ')
+ Contraseña = input ('Asigna una Contraseña: ')
+
+  #Condiciones para validar las variables 
+ if Usuario in Usuarios and Contraseña in Contraseñas:
+   if Usuarios.index(Usuario) == Contraseñas.index(Contraseña):
+     Access = True
+     
+     #Finaliza el caso de las condiciones de las variables
+     
+     break
+   else:
+    print('Error, Intente de nuevo:')
+ else:
+  print('Error, Intente de nuevo:')
+
+if Access:
+  pass
+print('¡Bienvenido!')
